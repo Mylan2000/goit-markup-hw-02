@@ -17,6 +17,10 @@ body {
 }
 
 .logo {
+<<<<<<< HEAD
+=======
+  font-family: "Raleway", sans-serif
+>>>>>>> dfa57a7 (Fix: updated Google Fonts and minor style changes)
   font-size: 24px;
   font-weight: 700;
   color: #000000;
@@ -93,4 +97,8 @@ body {
 .address-link {
   text-decoration: none;
   color: #ffffff;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dfa57a7 (Fix: updated Google Fonts and minor style changes)
