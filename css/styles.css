@@ -31,7 +31,7 @@ a {
 }
 
 .header-logo .logo-part {
-color: #2e2f42;
+color: #2e2f42; 
 }
 
 .footer-logo .logo-part {
@@ -52,6 +52,55 @@ color: #2e2f42;
   letter-spacing: 0.02em;
   color: #404bbf;
 } 
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: #2e2f42;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-item {
+  width: 360px;
+  background-color: #ffffff;
+  border: 1px solid #e7e9fc;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 32px 16px 8px;
+  color: #2e2f42;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0 16px 32px;
+  color: #434455;
+}
 
 .portfolio {
   padding: 120px 0;
