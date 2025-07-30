@@ -21,7 +21,7 @@ a {
 }
 
 .logo {
-  font-family: ´Ralewy´, sans-serif;
+  font-family: "Ralewy", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -50,11 +50,24 @@ color: #2e2f42;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #434455;
 } 
 
-.portfolio {
-  padding: 120px 0;
+.contacts-tel:hover,
+.contacts-tel:focus {
+  color: #404bbf;
+}
+
+.contacts-tel {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts-tel:hover,
+.contacts-tel:focus {
+  color: #404bbf;
 }
 
 .portfolio-title {
