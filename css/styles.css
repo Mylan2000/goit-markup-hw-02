@@ -183,6 +183,25 @@ color: #2e2f42;
   color: #434455;
 }
 
+.test-properties {
+  position: static;
+  width: auto;
+  height: auto;
+  top: auto;
+  left: auto;
+  box-sizing: border-box;
+  display: block;
+  align-items: normal;
+  padding: 0;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 0;
+  box-shadow: none;
+  order: 0;
+  flex-grow: 0;
+  border-bottom: none;
+}
+
 
   
 
