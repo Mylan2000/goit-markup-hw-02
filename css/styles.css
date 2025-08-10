@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  font-family: 'Roboto',sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Releway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4D5AE5;
+}
+
+.header-logo .logo-part {
+  color: #2E2F42;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -107,14 +161,53 @@ header {
     color: #434455;
 }
 
+/* ===== Our Team ===== */
 .team {
-    height: 732px;
+   padding: 120px 0; 
+   background: #F4F4FD; 
+  }
 
-    background: #F4F4FD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.team h2 { 
+  text-align: center; 
+  font-size: 34px; 
+  margin-bottom: 48px; 
+  color: #2E2F42; 
+}
+
+.team-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 24px;
+}
+
+.team-member{
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(46,47,66,.08);
+}
+
+.team-member .photo{
+  display: block;
+  width: 100%;
+  aspect-ratio: 264 / 260; /* однакова висота картинок */
+  object-fit: cover;
+}
+
+.team-member .name{
+  text-align: center;
+  margin: 16px 0 8px;
+  font-weight: 600;
+  color: #2E2F42;
+}
+
+.team-member .role{
+  text-align: center;
+  margin: 0 0 24px;
+  color: #434455;
 }
 
 .persons {
@@ -157,22 +250,6 @@ header {
     color: #434455;
 }
 
-.team h2{
-    text-align: center;
-    font-size: 34px;
-    padding-bottom: 40px;
-    color: #2E2F42;
-}
-
-
-
-.Portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .projects {
     display: flex;
     max-width: 1128px;
@@ -213,11 +290,104 @@ header {
     color: #434455;
 }
 
-.Portfolio h2{
-    padding: 120px 0 80px;
-    text-align: center;
-    font-size: 44px;
-    color: #2E2F42;
+/* ===== Our Portfolio ===== */
+.portfolio { padding: 120px 0; }
+
+.portfolio h2{
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 48px;
+  color: #2E2F42;
+}
+
+.portfolio-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 24px;
+}
+
+.project{
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(46,47,66,.08);
+}
+
+.project .prj-photo{
+  display: block;
+  width: 100%;
+  aspect-ratio: 360 / 300; /* прямокутні прев’ю */
+  object-fit: cover;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.project-info{ padding: 20px 16px; }
+
+.prj-name{ margin: 0 0 6px; font-weight: 600; color:#2E2F42; }
+.prj-class{ margin: 0; color:#434455; }
+
+/* Блок стратегій */
+.features {
+  padding: 60px 0;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.features-item {
+  flex: 1;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #212121;
+}
+
+.features-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #757575;
+}
+
+/* Синій блок */
+.promo {
+  background-color: #2F303A;
+  padding: 60px 0;
+}
+
+.promo-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.web {
+  color: #2196F3;
+}
+
+.promo-text {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 450px;
+  text-align: left;
+}
+
+.promo .container {
+  padding-left: 15px;
 }
 
 footer{
@@ -253,6 +423,135 @@ footer .content p{
     max-width: 364px;
 }
 
+/* ===== HEADER ===== */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo-header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2E2F42;
+  text-decoration: none;
+}
+
+.logo-part {
+  color: #4D5AE5;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #2E2F42;
+  text-decoration: none;
+  padding: 24px 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404BBF;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-link {
+  color: #434455;
+  text-decoration: none;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404BBF;
+}
+
+/* ===== HERO ===== */
+.banner {
+  background-color: #2E2F42; /* темний фон */
+  text-align: center;
+  padding: 188px 0;
+}
+
+.banner h1 {
+  max-width: 496px;
+  margin: 0 auto 48px;
+  font-size: 56px;
+  line-height: 1.07;
+  color: white;
+}
+
+.banner button {
+  background-color: #4D5AE5;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.banner button:hover,
+.banner button:focus {
+  background-color: #404BBF;
+}
+
+/* ===== 4 блоки під HERO ===== */
+.descriptions {
+  padding: 120px 0;
+}
+
+.descriptions div {
+  text-align: left;
+}
+
+.descriptions h2 {
+  font-size: 20px;
+  color: #2E2F42;
+  margin-bottom: 8px;
+}
+
+.descriptions p {
+  color: #434455;
+  margin: 0;
+}
+
+/* робимо 4-колонну сітку */
+.descriptions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
 
 
   
