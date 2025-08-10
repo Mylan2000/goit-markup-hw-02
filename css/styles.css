@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto",sans-serif;
   color: #434455;
-  background-color: #fff;
+  background-color: #FFFFFF;
+  margin: 0;
 }
 
 ul, ol {
   list-style-type: none;
+}
+
+/* Utility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 a {
@@ -15,10 +30,10 @@ a {
 }
 
 .logo {
-  font-family: 'Releway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4D5AE5;
@@ -118,17 +133,19 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-
-.banner h1 {
-    max-width: 350px;
-    font-size: 40px;
-    color: white;
-    text-align: center;
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
 }
 
-.banner button {
+.main-btn {
+  background-color: #4D5AE5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
     color: white;
-    background: #4D5AE5;
     width: 170px;
     height: 56px;
     border: none;
@@ -136,6 +153,22 @@ header {
     font-size: 20px;
     margin-top: 40px;
     border-radius: 5px;
+}
+
+/* ===== Features (2 секція) ===== */
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .descriptions {
