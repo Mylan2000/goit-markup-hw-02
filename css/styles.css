@@ -353,6 +353,38 @@ header {
 
 .project-info{ padding: 20px 16px; }
 
+/* секційний h2 (3-тя/4-та секції) */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+/* заголовок картки */
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+/* текст картки */
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* дрібні технічні */
+.portfolio-list { list-style: none; }
+.project img { display: block; }
+
+
 .prj-name{ margin: 0 0 6px; font-weight: 600; color:#2E2F42; }
 .prj-class{ margin: 0; color:#434455; }
 
@@ -403,9 +435,9 @@ header {
   padding-left: 15px;
 }
 
-footer{
+.page-footer {
     width: 100%;
-    background: #2E2F42;
+    background-color: #2E2F42;
     height: 312px;
     display: flex;
     align-items: center;
@@ -419,16 +451,16 @@ footer .content{
     margin: 0 auto;
 }
 
-footer .logo p{
+.page-footer .logo p{
     color: white;
     font-weight: 500;
 }
 
-footer .logo p span{
+.page-footer .logo p span{
     color: #4D5AE5;
 }
 
-footer .content p{
+.page-footer .content p{
     color: white;
     padding-top: 15px;
     font-size: 20px;
@@ -594,7 +626,9 @@ footer .content p{
 }
 
 /* ===== Footer ===== */
-.page-footer { background-color: #2e2f42; }
+.page-footer { 
+  background-color: #2e2f42;
+ }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -605,7 +639,9 @@ footer .content p{
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.footer-logo .logo-part { color: #f4f4fd; }
+.footer-logo .logo-part { 
+  color: #f4f4fd;
+ }
 
 .footer-text {
   color: #f4f4fd;
