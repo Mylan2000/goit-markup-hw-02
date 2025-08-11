@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #FFFFFF;
-  margin: 0;
 }
 
 ul, ol {
@@ -30,7 +29,7 @@ a {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -76,12 +75,7 @@ color: #2E2F42;
     font-family: "Roboto", sans-serif;
 }
 
-body {
-    max-width: 1440px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 header {
     display: flex;
@@ -380,20 +374,6 @@ header {
   flex: 1;
 }
 
-.features-title {
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #212121;
-}
-
-.features-item p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #757575;
-}
-
 /* Синій блок */
 .promo {
   background-color: #2F303A;
@@ -586,6 +566,52 @@ footer .content p{
   gap: 24px;
 }
 
+/* ===== Заголовки секцій (Team/Portfolio) ===== */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
+
+/* ===== Заголовок картки (ім’я/назва) ===== */
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+/* ===== Текст картки (роль/тип) ===== */
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* ===== Footer ===== */
+.page-footer { background-color: #2e2f42; }
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.footer-logo .logo-part { color: #f4f4fd; }
+
+.footer-text {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
   
 
