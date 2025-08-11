@@ -609,11 +609,6 @@ footer .content{
   color: #434455;
 }
 
-/* ===== Footer ===== */
-.page-footer { 
-  background-color: #2e2f42;
- }
-
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -624,14 +619,16 @@ footer .content{
   color: #4d5ae5;
   text-decoration: none;
 }
-.footer-logo .logo-part { 
+
+.footer-logo .logo-part {
   color: #f4f4fd;
- }
+}
 
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light-color, #f4f4fd); /* або напряму #f4f4fd */
+  max-width: 264px;
 }
 
   
