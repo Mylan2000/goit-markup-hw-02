@@ -419,37 +419,47 @@ header {
   padding-left: 15px;
 }
 
+.container {
+  width: 1158;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.15px;
+}
+
+/* ===== Footer (чисто і як у макеті) ===== */
 .page-footer {
-    width: 100%;
-    background-color: #2E2F42;
-    height: 312px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-
+  background-color: #2e2f42;
+  padding: 100px 0;              /* вертикальні відступи замість фіксованої висоти */
 }
 
-footer .content{
-    width: 100%;
-    max-width: 1128px;
-    margin: 0 auto;
+.page-footer .container {
+  width: 1158px;                 /* або 1128px, якщо так у тебе скрізь */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.page-footer .logo p{
-    color: white;
-    font-weight: 500;
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;           /* відступ від лого до тексту */
 }
 
-.page-footer .logo p span{
-    color: #4D5AE5;
-}
+.footer-logo .logo-part { color: #f4f4fd; }
 
-.page-footer .content p{
-    color: white;
-    padding-top: 15px;
-    font-size: 20px;
-    line-height:32px;
-    max-width: 364px;
+.footer-text {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;              /* як у макеті */
+  margin: 0;                     /* прибираємо зайві відступи браузера */
 }
 
 /* ===== HEADER ===== */
@@ -627,7 +637,7 @@ footer .content{
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--light-color, #f4f4fd); /* або напряму #f4f4fd */
+  color: #f4f4fd; /* або напряму #f4f4fd */
   max-width: 264px;
 }
 
