@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+  --iris:#4d5ae5;
+  --navy:#2e2f42;
+  --slate:#434455;
+  --cloud:#f4f4fd;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #FFFFFF;
 }
 
-ul, ol {
-  list-style-type: none;
-}
-
-/* Utility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -22,6 +24,10 @@ ul, ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+ul, ol {
+  list-style-type: none;
 }
 
 a {
@@ -55,10 +61,10 @@ color: #2E2F42;
 }
 
 .contacts-link {
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -68,10 +74,10 @@ color: #2E2F42;
   color: #404bbf;
 }
 
-header {
-    display: flex;
-    height: 72px;
-    align-items: center;
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 72px;
 }
 
 .logo {
@@ -89,6 +95,19 @@ header {
     color: #4D5AE5;
 }
 
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 24px o;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -99,10 +118,24 @@ header {
     color: #2E2F42;
 }
 
+.contact-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-link {
+  display: block;
+  padding: 24px 0;
+}
+
 .contacts {
     display: flex;
     align-items: center;
-    margin: 0 0 0 auto;
+    margin-left: auto;
+    font-style: normal;
 }
 
 .contacts p {
@@ -147,6 +180,18 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-item {
+  flex: 1;
 }
 
 .features-text {
@@ -374,20 +419,19 @@ header {
 
 /* Блок стратегій */
 .features {
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 .features-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
-  gap: 30px;
+  gap: 24px;
 }
 
 .features-item {
-  flex: 1;
+ width: calc((100% - 72px) / 4);
 }
 
 /* Синій блок */
@@ -420,10 +464,10 @@ header {
 }
 
 .container {
-  width: 1158;
+  width: 1158px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0.15px;
+  padding: 0 15px;
 }
 
 /* ===== Footer (чисто і як у макеті) ===== */
@@ -439,33 +483,14 @@ header {
   padding: 0 15px;
 }
 
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 16px;           /* відступ від лого до тексту */
-}
-
-.footer-logo .logo-part { color: #f4f4fd; }
-
-.footer-text {
-  color: #f4f4fd;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;              /* як у макеті */
-  margin: 0;                     /* прибираємо зайві відступи браузера */
-}
-
 /* ===== HEADER ===== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  background: #fff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -477,12 +502,13 @@ header {
 
 .logo-header-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2E2F42;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-part {
@@ -490,18 +516,14 @@ header {
 }
 
 .nav-list {
-  display: flex;
-  gap: 40px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-link {
   font-weight: 500;
   color: #2E2F42;
   text-decoration: none;
-  padding: 24px 0;
+  line-height: 1.5;
 }
 
 .nav-link:hover,
@@ -514,11 +536,7 @@ header {
 }
 
 .contact-list {
-  display: flex;
-  gap: 40px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .contacts-link {
@@ -626,18 +644,18 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--iris);
   text-decoration: none;
 }
 
 .footer-logo .logo-part {
-  color: #f4f4fd;
+  color: var(--cloud);
 }
 
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd; /* або напряму #f4f4fd */
+  color: var(--cloud);
   max-width: 264px;
 }
 
