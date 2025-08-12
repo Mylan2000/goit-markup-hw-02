@@ -257,14 +257,17 @@ img { display: block;
   line-height: 1.17;
   letter-spacing: 0.03em; 
   text-transform: uppercase; 
-  color: #4d5ae5;
+  color:#4d5ae5;
 }
 
-.footer-logo .logo-accent { color: #4d5ae5; } /* 'Web' already iris */
+.footer-accent { 
+  color:#f4f4fd;  /* 'Web' already iris */
+}
 
-.footer-text { line-height: 1.5; 
+.footer-text { 
+  line-height: 1.5; 
   letter-spacing: 0.02em; 
-  color: #f4f4fd;
+  color: var(--cloud);
    max-width: 264px;
    }
 
