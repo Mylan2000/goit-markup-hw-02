@@ -75,12 +75,12 @@ img { display: block;
   line-height: 1.17;
   letter-spacing: 0.03em; 
   text-transform: uppercase; 
-  color:#2e2f42; 
+  color:#4d5ae5; 
   margin-right: 76px;
 }
 
 .logo-accent { 
-  color:#4d5ae5; 
+  color:#2e2f42; 
 }
 
 .nav-list { 
@@ -98,7 +98,11 @@ img { display: block;
   color:#2e2f42;
 }
 
-.nav-link:hover,.nav-link:focus{ color:#404bbf; }
+.nav-link:hover,
+.nav-link:focus { 
+  color:#404bbf; 
+}
+
 /* active item */
 .nav-link.current { 
   color:#404bbf; 
@@ -136,7 +140,10 @@ img { display: block;
    color:#434455;
 }
 
-.contacts-link:hover,.contacts-link:focus{ color:#404bbf; }
+.contacts-link:hover,
+.contacts-link:focus { 
+  color:#404bbf; 
+}
 
 /* ===== Hero ===== */
 .banner{ 
