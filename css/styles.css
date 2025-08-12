@@ -1,3 +1,9 @@
+body { 
+  font-family: "Roboto", sans-serif; 
+  color:#434455; 
+  background:#ffffff; 
+}
+
 /* ===== Base ===== */
 :root{
   --iris:#4d5ae5;
@@ -9,12 +15,7 @@
 *{ box-sizing:
   border-box;
  }
- 
-body { 
-  font-family: "Roboto", sans-serif; 
-  color:#434455; 
-  background:#ffffff; 
-}
+
 
 ul,ol { 
   list-style: none;
